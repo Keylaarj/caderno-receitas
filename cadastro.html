@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Caderno de Receitas</title>
+    <link rel="stylesheet" href="cadastroLoginStyle.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="logosistema">
+            <img src="imagens/logo.svg" alt="logo">
+        </div>
+        <h1 class="nomedosistema">Caderno de Receitas</h1>
+    </header>
+
+    <section class="autenticacao">
+        <div class="cardautenticacao">
+            <h2>Criar Conta</h2>
+            <form id="formcadastro">
+                <label for="cadastronome">Nome completo:</label>
+                <input type="text" id="cadastronome" placeholder="Seu nome" required>
+
+                <label for="cadastroemail">E-mail:</label>
+                <input type="email" id="cadastroemail" placeholder="Seu e-mail" required>
+
+                <label for="cadastrosenha">Senha:</label>
+                <input type="password" id="cadastrosenha" placeholder="Crie uma senha" required>
+
+                <div class="botoesautenticacao">
+                    <button type="submit" id="botaocadastrar" class="botaocadastrar">Cadastrar</button>
+                </div>
+            </form>
+            <p class="linklogin">
+                Já possui uma conta? <a href="login.html">Faça login</a>
+            </p>
+        </div>
+    </section>
+    <script src="js/auth.js"></script>
+</body>
+</html>

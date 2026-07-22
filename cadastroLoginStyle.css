@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f7f3e9;
+  color: #333333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cabecalho {
+  width: 100%;
+  background-color: #d96b27;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logosistema img {
+  width: 35px;
+  height: 35px;
+  display: block;
+}
+
+.nomedosistema {
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.autenticacao,
+.containerautenticacao {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.cardautenticacao {
+  background-color: #fff8e7;
+  border-radius: 16px;
+  padding: 30px 25px;
+  width: 100%;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardautenticacao h2 {
+  color: #8a3b0e;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+label {
+  color: #8a3b0e;
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-bottom: -4px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #e0d0b8;
+  border-radius: 8px;
+  background-color: #ffffff;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input:focus {
+  border-color: #d96b27;
+  box-shadow: 0 0 0 3px rgba(217, 107, 39, 0.2);
+}
+
+.botoesautenticacao {
+  margin-top: 10px;
+}
+
+.botaocadastrar,
+.botaoprimario {
+  width: 100%;
+  background-color: #7ba368;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.botaocadastrar:hover,
+.botaoprimario:hover {
+  background-color: #688c56;
+}
+
+.botaocadastrar:active,
+.botaoprimario:active {
+  transform: scale(0.98);
+}
+
+.linklogin,
+.linkcadastro {
+  margin-top: 20px;
+  font-size: 0.85rem;
+  color: #666666;
+  text-align: center;
+}
+
+.linklogin a,
+.linkcadastro a {
+  color: #d96b27;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.linklogin a:hover,
+.linkcadastro a:hover {
+  text-decoration: underline;
+}
